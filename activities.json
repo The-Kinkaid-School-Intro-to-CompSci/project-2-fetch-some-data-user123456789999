@@ -1,0 +1,15 @@
+[
+    {"name": "spend time with your pet", "time": "short"},
+    {"name": "draw something", "time": "short"},
+    {"name": "make oragami", "time": "short"},
+    {"name": "make a snack", "time":"short"},
+    {"name": "go swimming", "time": "long"},
+    {"name": "go on a walk", "time": "long"},
+    {"name": "read a book", "time": "long"},
+    {"name": "do your makeup", "time": "long"},
+    {"name": "go outside", "time": "short"},
+    {"name": "paint your nails", "time": "long"},
+    {"name": "bake something", "time": "long"}
+]
+
+
