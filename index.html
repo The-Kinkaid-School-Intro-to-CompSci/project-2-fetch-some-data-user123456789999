@@ -3,11 +3,84 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>The name of your website</title> 
-        <link rel="stylesheet" href="styles.css">
+        <title>Study Tool</title> 
+        <link id="styleRef" rel="stylesheet" href="default.css">
         <script type="text/javascript" src="script.js"></script>
     </head>
     <body>
-        Your HTML goes here
+        <div id="bigDiv">
+            <h1>STUDY TIME! :(</h1>
+            <div class="thingsNextToEachOther">
+                <div id="timerSection" class="largeSection">
+                    <h2>timer</h2>
+                    <h3>work length:</h3>
+                    <div class="thingsNextToEachOther">
+                        <input id="workHour" class="timeInput" type="text" class="buttonThings">
+                        :
+                        <input id="workMinute" class="timeInput" type="text" class="buttonThings">
+                        <button id="workButton" class="buttonThings">enter</button>
+                    </div>
+                    <h3>break length:</h3>
+                    <div class="thingsNextToEachOther">
+                        <input id="breakHour" class="timeInput" type="text" class="buttonThings">
+                        :
+                        <input id="breakMinute" class="timeInput" type="text" class="buttonThings">
+                        <button id="breakButton" class="buttonThings">enter</button>
+                    </div>
+                    <h2 id="workOrBreak">right now, you are working!</h2>
+                    <div>
+                        <h3>time left:</h3>
+                        <div id="timerDisplay">
+                            <p class="timer" id="timerHour">0:</p><p class="timer" id="timerMinute">0:</p><p class="timer" id="timerSecond">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="vertical">
+                    <div id="imageSection" class="largeSection">
+                        <img alt="image" id="image">
+                    </div>
+                    <div id="themeSection" class="largeSection">
+                        <h2>theme:</h2>
+                        <select name="theme" id="themeSelect" class="buttonThings">
+                            <option value="default">default</option>
+                            <option value="strawberry">strawberry</option>
+                            <option value="floral">floral</option>
+                            <option value="orange">clementine</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div id="listSection" class="largeSection">
+                <h2>To do:</h2>
+                <div class="thingsNextToEachOther">
+                    <div>
+                        <h3>new task:</h3>
+                        <div class="thingsNextToEachOther">
+                            <input id="taskInput" type="text" class="buttonThings">
+                            <button id="taskButton" class="buttonThings">enter</button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>difficulty:</h3>
+                        <select name="difficulty" id="difficultySelect" class="buttonThings">
+                            <option value="easy">easy</option>
+                            <option value="medium">medium</option>
+                            <option value="hard">hard</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="thingsNextToEachOther">
+                    <div id="easyTasks" class="taskLists">
+                        <h3>easy</h3>
+                    </div>
+                    <div id="mediumTasks" class="taskLists">
+                        <h3>medium</h3>
+                    </div>
+                    <div id="hardTasks" class="taskLists">
+                        <h3>hard</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
